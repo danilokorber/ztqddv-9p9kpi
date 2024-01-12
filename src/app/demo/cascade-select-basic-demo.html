@@ -1,0 +1,11 @@
+<div class="card flex justify-content-center">
+  <p-cascadeSelect
+    [(ngModel)]="selectedCity"
+    [options]="countries()"
+    optionLabel="cname"
+    optionGroupLabel="name"
+    [optionGroupChildren]="['states', 'cities']"
+    [style]="{ minWidth: '14rem' }"
+    placeholder="Select a City"
+  ></p-cascadeSelect>
+</div>
